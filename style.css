@@ -1,11 +1,11 @@
-.containerInicio {
-	background-color: aqua;
+.navbar {
+	align-items: space-between;
 }
 
-.containerCuerpo {
-	background-color: #f1f1f1;
-}
-
-.containerCatalogo {
-	background-color: red;
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-collapse {
+		display: flex !important;
+		flex-basis: auto;
+		justify-content: flex-end;
+	}
 }
