@@ -3,6 +3,10 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+/**-----------------------**/
+/**  SECTCION  NAVBAR     **/
+/**-----------------------**/
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -15,6 +19,22 @@ body {
 		justify-content: flex-end;
 	}
 }
+
+/**-----------------------**/
+/**  SECTCION  NOSOTROS   **/
+/**-----------------------**/
+
+/**-----------------------**/
+/**  SECTCION  PRODUCTOS  **/
+/**-----------------------**/
+
+/**-----------------------**/
+/**  SECTCION  SERVICIOS  **/
+/**-----------------------**/
+
+/**-----------------------**/
+/**  SECTCION  MATERIALES **/
+/**-----------------------**/
 
 /**-----------------------**/
 /**  SECTCION  CONTACTO    */
