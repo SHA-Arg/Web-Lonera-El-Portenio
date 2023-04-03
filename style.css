@@ -7,6 +7,7 @@ body {
 /**-----------------------**/
 /**  SECTCION  NAVBAR     **/
 /**-----------------------**/
+
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -23,18 +24,29 @@ body {
 /**-----------------------**/
 /**  SECTCION  NOSOTROS   **/
 /**-----------------------**/
-
+.containerNosotros {
+}
 /**-----------------------**/
 /**  SECTCION  PRODUCTOS  **/
 /**-----------------------**/
+.containerProductos {
+}
 
 /**-----------------------**/
 /**  SECTCION  SERVICIOS  **/
 /**-----------------------**/
+.containerServicios {
+}
 
 /**-----------------------**/
 /**  SECTCION  MATERIALES **/
 /**-----------------------**/
+.containerMateriales {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 90px;
+}
 
 /**-----------------------**/
 /**  SECTCION  CONTACTO    */
