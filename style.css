@@ -1,5 +1,7 @@
 body {
-	background-color: rgb(29, 175, 43);
+	background-image: url("./src/img/fondo\ lonera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .navbar {
 	position: fixed;
