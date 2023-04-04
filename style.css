@@ -1,99 +1,308 @@
 body {
-	background-image: url("./src/img/fondo\ lonera.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+  background: linear-gradient(
+    to bottom right,
+    rgb(50, 3, 223),
+    rgb(1, 212, 19)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /**-----------------------**/
 /**  SECTCION  NAVBAR     **/
 /**-----------------------**/
 
-.navbar {
-	position: fixed;
-	width: 100%;
+.navBar {
+  background: rgb(0, 250, 237);
+  height: 150px;
+  width: 100%;
+  
+  align-content: center;
+}
+.navLeft {
+  background-color: #3a3d4b;
+
+  width: 70%;
+  height: 100%;
+  float: right;
+}
+
+#logo_lonera {
+  margin-left: 50%;
+  
+}
+.navRight {
+  background-color: #3a3d4b;
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+/**.menu{
+
+	display: flex;
+	justify-content: center;
+	padding-top: 8%;
+	padding-right: 3%;
+	
+	
+
+}
+
+li {
+	
+	float: left;
+}
+
+.menu li {
+	width: 125px;
+	height: 50px;
+	transition: background-position-x 0.9s linear;
+	text-align: center;
+
+	
+
+}
+a {
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.45s;
+
+}**/
+:root {
+--body-bg-color: #000000;
+--text-color: #aaaebc;
+--hr-color: #26292a;
+--transition-duration: 0.3s;
+--transition-delay: 0.2s;
+--red: #e74c3c;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+
+color:white;
+font-size: 25px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: none;
+}
+
+
+hr {
+border-color: var(--hr-color);
+margin: 20px 0;
+}
+
+.menu {
+display: flex;
+justify-content: center;
+padding-top: 50px;
+}
+
+.menu li {
+margin-right: 40px;
+}
+
+.menu a {
+position: relative;
+display: block;
+padding: 10px;
+}
+
+.menu .border {
+position: absolute;
+left: 0;
+background: currentColor;
+transition: transform var(--transition-duration) ease-in-out;
+}
+
+.menu .border-top,
+.menu .border-bottom {
+width: 100%;
+height: 1px;
+transform: scaleX(0);
+}
+
+.menu .border-left,
+.menu .border-right {
+width: 1px;
+height: 100%;
+transform: scaleY(0);
+}
+
+.menu .border-top,
+.menu .border-left,
+.menu .border-right {
+top: 0;
+}
+
+.menu .border-bottom {
+bottom: 0;
+transform-origin: bottom right;
+}
+
+.menu .border-top {
+transform-origin: top left;
+}
+
+.menu .border-left {
+transform-origin: bottom left;
+}
+
+.menu .border-right {
+left: auto;
+right: 0;
+transform-origin: top right;
+}
+
+.menu a:hover .border-top,
+.menu a:hover .border-bottom {
+transform: scaleX(1);
+}
+
+.menu a:hover .border-left,
+.menu a:hover .border-right {
+transform: scaleY(1);
+}
+
+.menu a:hover .border-right {
+transition-delay: var(--transition-delay);
+}
+
+.menu a:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+
+.menu a:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}
+
+/* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu[data-animation="diagonal"] .border-left {
+transform-origin: top left;
+}
+
+.menu[data-animation="diagonal"] .border-right,
+.menu[data-animation="diagonal"] .border-bottom {
+transform-origin: bottom right;
+}
+
+.menu[data-animation="diagonal"] a:hover [class^="border"] {
+transition-delay: 0s;
+}
+
+.contenedorPagina {
+background-color: aqua;
 }
 
 @media (min-width: 992px) {
-	.navbar-expand-lg .navbar-collapse {
-		display: flex !important;
-		flex-basis: auto;
-		justify-content: flex-end;
-	}
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
 }
 
 /**-----------------------**/
 /**  SECTCION  NOSOTROS   **/
 /**-----------------------**/
 .containerNosotros {
+  background-color: white;
+
+
+
+  align-content: center;
 }
 /**-----------------------**/
 /**  SECTCION  PRODUCTOS  **/
 /**-----------------------**/
 .containerProductos {
+  background-color: white;
+  
+
+  align-content: center;
 }
 
 /**-----------------------**/
 /**  SECTCION  SERVICIOS  **/
 /**-----------------------**/
 .containerServicios {
+  background-color: white;
+ 
+
+  align-content: center;
 }
 
 /**-----------------------**/
 /**  SECTCION  MATERIALES **/
 /**-----------------------**/
 .containerMateriales {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  align-content: center;
 }
 
 /**-----------------------**/
 /**  SECTCION  CONTACTO    */
 /**-----------------------**/
 .containerContacto {
-	margin-top: 200px;
+  margin-top: 200px;
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  align-content: center;
 }
 .form {
-	width: 400px;
-	height: 300px;
-	background: #e6e6e6;
-	border-radius: 23px;
-	box-shadow: 0 0 40px -10px #000;
-	margin: calc(9vh - 20px) auto;
-	padding: 10px 20px;
-	max-width: calc(100vw - 40px);
-	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
-	position: relative;
+  width: 400px;
+  height: 300px;
+  background: #e6e6e6;
+  border-radius: 23px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(9vh - 20px) auto;
+  padding: 10px 20px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 h2 {
-	margin: 10px 0;
+  margin: 10px 0;
 
-	width: 180px;
-	color: #78788c;
-	border-bottom: 3px solid #78788c;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
 }
 input {
-	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	background: none;
-	outline: none;
-	resize: none;
-	border: 0;
-	font-family: "Montserrat", sans-serif;
-	transition: all 0.3s;
-	border-bottom: 2px solid #bebed2;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
 }
 
 /**-----------------------**/
 /**   SECTCION   FOOTER    */
 /**-----------------------**/
 footer {
-	background: #aeacac;
-	color: rgb(10, 9, 9);
-	font-size: x-large;
-	text-align: center;
-	padding: 20px;
+  background: #aeacac;
+  color: rgb(10, 9, 9);
+  font-size: x-large;
+  text-align: center;
+  padding: 20px;
 }
