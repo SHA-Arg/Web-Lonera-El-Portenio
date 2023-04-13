@@ -8,85 +8,97 @@
 			rel="stylesheet"
 			href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
 		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link
 			href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Dosis:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 			rel="stylesheet" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="whatsapp.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/whatsapp.css" />
 
 		<title>El Porteño </title>
 	</head>
 
 	<body>
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<!-- ICONO DE WHATSAPP -->
 		<a
 			href="https://api.whatsapp.com/send?phone=5493815392620&text=Hola,Somos%20Lonera%20El%20Porte%C3%B1o.%20Escribinos"
 			class="float"
 			target="_blank">
 			<i class="fa fa-whatsapp my-float"></i>
 		</a>
-		<div class="navBar">
-			<div class="navLeft">
-				<nav>
-					<ul class="menu">
-						<li>
-							<a href="#0">
-								NOSOTROS
-								<span class="border border-top"></span>
-								<span class="border border-right"></span>
-								<span class="border border-bottom"></span>
-								<span class="border border-left"></span>
-							</a>
-						</li>
-						<li>
-							<a href="#0">
-								PRODUCTOS
-								<span class="border border-top"></span>
-								<span class="border border-right"></span>
-								<span class="border border-bottom"></span>
-								<span class="border border-left"></span>
-							</a>
-						</li>
-						<li>
-							<a href="#0">
-								SERVICIOS
-								<span class="border border-top"></span>
-								<span class="border border-right"></span>
-								<span class="border border-bottom"></span>
-								<span class="border border-left"></span>
-							</a>
-						</li>
-						<li>
-							<a href="#0">
-								MATERIALES
-								<span class="border border-top"></span>
-								<span class="border border-right"></span>
-								<span class="border border-bottom"></span>
-								<span class="border border-left"></span>
-							</a>
-						</li>
-						<li>
-							<a href="#0">
-								CONTACTO
-								<span class="border border-top"></span>
-								<span class="border border-right"></span>
-								<span class="border border-bottom"></span>
-								<span class="border border-left"></span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="navRight">
+
+		<!-- NAV BAR -->
+
+		<nav class="navbar navbar-expand-lg">
+			<div class="nav__container">
 				<img
 					id="logo_lonera"
 					src="./src/img/Logo.png"
-					width="200px"
-					height="150px"
+					width="100px"
+					height="100px"
 					alt="" />
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<ul class="menu navbar-nav">
+					<li class="nav-item">
+						<a href="#Nosotros">
+							NOSOTROS
+							<span class="border border-top"></span>
+							<span class="border border-right"></span>
+							<span class="border border-bottom"></span>
+							<span class="border border-left"></span>
+						</a>
+					</li>
+					<li class="nav-item nav-link">
+						<a href="#Productos">
+							PRODUCTOS
+							<span class="border border-top"></span>
+							<span class="border border-right"></span>
+							<span class="border border-bottom"></span>
+							<span class="border border-left"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Servicios">
+							SERVICIOS
+							<span class="border border-top"></span>
+							<span class="border border-right"></span>
+							<span class="border border-bottom"></span>
+							<span class="border border-left"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Materiales">
+							MATERIALES
+							<span class="border border-top"></span>
+							<span class="border border-right"></span>
+							<span class="border border-bottom"></span>
+							<span class="border border-left"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Contacto">
+							CONTACTO
+							<span class="border border-top"></span>
+							<span class="border border-right"></span>
+							<span class="border border-bottom"></span>
+							<span class="border border-left"></span>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</div>
+		</nav>
+
+		<!--** BANER DE MANTENIMIENTO -->
 		<!-- <div class="container">
 			<h1>PROXIMAMENTE www!</h1>
 			<img
@@ -94,101 +106,11 @@
 				width="50%"
 				alt="El Porteño"
 				class="logo" />
-			<h1>Sitio en Progreso!</h1>
+			<h1>SITIO EN MANTENIMIENTO!</h1>
 		</div> -->
 
-		<!--	<div class="containerNavbar">
-			<nav class="navbar navbar-expand-lg">
-				<div class="">
-					<img id="logo_lonera" src="./src/img/Logo.png" width=10% height=10% alt="" />
-					
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNavDropdown"
-						aria-controls="navbarNavDropdown"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>NOSOTROS</a
-								>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="navbarDarkDropdownMenuLink"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false">
-									PRODUCTOS
-								</a>
-								<ul
-									class="dropdown-menu dropdown-menu-dark"
-									aria-labelledby="navbarDarkDropdownMenuLink">
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>LONAS PARA CAMIONES/SIDERS</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>FUNDAS PARA CARRITO/ TRAILER</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>COBERTORES PARA PILETA</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>LONA PLANA</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>CARPAS EVENTOS</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>CORTINAS BLACK OUT</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>CUBIERTAS PARA EMBARCACIONES</a
-										></li
-									>
-									<li
-										><a class="dropdown-item" href="#Catalogo"
-											>LONAS AGRICOLAS</a
-										></li
-									>
-								</ul>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#Servicios">SERVICIOS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#Materiales">MATERIALES</a> </li
-							><li class="nav-item">
-								<a class="nav-link" href="#Contacto">CONTACTO</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>-->
-
-		<div class="containerNosotros">
+		<!-- SECCION ACERCA DE NOSOTROS -->
+		<div class="containerNosotros" id="Nosotros">
 			<div class="container col-xxl-8 px-4 py-5">
 				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 					<div class="col-10 col-sm-8 col-lg-6">
@@ -213,12 +135,12 @@
 							sus principales características.</p
 						>
 						<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-							<button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
-								>Productos</button
-							>
 							<button
 								type="button"
-								class="btn btn-outline-secondary btn-lg px-4"
+								class="btn btn-outline-success btn-lg px-4 me-md-2"
+								>Productos</button
+							>
+							<button type="button" class="btn btn-outline-success btn-lg px-4"
 								>Contacto</button
 							>
 						</div>
@@ -227,19 +149,119 @@
 			</div>
 		</div>
 
-		<div class="containerProductos" id="Productos"> </div>
+		<!-- SECCION PRODUCTOS -->
+		<div class="containerProductos" id="Productos">
+			<!--   Tarjetas-->
+			<h1 class="productos">PRODUCTOS</h1>
+			<div class="container-card">
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/CAMIONES.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>LONAS PARA CAMIONES/SIDERS</h3>
+						<p>Las mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/CARRITO.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>FUNDAS PARA CARRITO/ TRAILER</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/CUBREPILE.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>COBERTORES DE PILETAS</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/TOLDOBRAZOINVISI.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>TOLDOS </h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/CERRAMIENTOS.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>CIERRAMIENTOS</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/CORTINASBLACKO1.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>CORTINAS BLACKOUT</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-card">
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/INFLABLES1.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>INFLABLES</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/LONAEMBARCACION.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>LONA DE EMBARCACIONES</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+				<div class="card">
+					<figure>
+						<img src="./src/img/productos/COMEDEROGANADO.png" />
+					</figure>
+					<div class="contenido-card">
+						<h3>SOLUCIONES RURALES</h3>
+						<p>Los mejores y mas resistentes.</p>
+						<a href="#">COMPRAR!</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- SECCION SERVICIOS -->
 		<div class="containerServicios" id="Servicios">
+			<h1 class="servicios">SERVICIOS</h1>
 			<div class="container col-xxl-8 px-4 py-5">
 				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 					<div class="col-10 col-sm-8 col-lg-6">
-						<img
-							src="./src/img/Logo.png"
-							class="d-block mx-lg-auto img-fluid"
-							alt="Bootstrap Themes"
-							width="400"
-							height="400"
-							loading="lazy" />
+						<h3 class="display-5 fw-bold lh-1 mb-3">MANTENIMIENTO:</h3>
+						<p class="lead"
+							>Hacemos revisiones de tu instalación para asegurarnos de que
+							sigue en las mejores condiciones.</p
+						>
 					</div>
 					<div class="col-lg-6">
 						<h1 class="display-5 fw-bold lh-1 mb-3">REPARACION:</h1>
@@ -254,151 +276,102 @@
 							y exponérnosla, nosotros analizaremos y la repararemos de forma
 							rápida, eficiente y cómoda para ti.</p
 						>
+					</div>
+				</div>
+			</div>
+		</div>
 
-						<h3 class="display-5 fw-bold lh-1 mb-3">MANTENIMIENTO:</h3>
-						<p class="lead"
-							>Hacemos revisiones de tu instalación para asegurarnos de que
-							sigue en las mejores condiciones.</p
+		<!-- SECCION MATERIALES -->
+
+		<div class="containerMateriales" id="Materiales">
+			<h1 class="materiales">MATERIALES</h1>
+			<div class="containerTarjetas">
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">Lona Litoral Zonda/Premium UTTER</div>
+						<div class="theBack"
+							>Tejido de poliéster recubierto con PVC en ambas caras. Totalmente
+							impermeable Paños de 1,50 y 1,00 metros de ancho Uniones por
+							termofusión de 20 mm de ancho Gran variedad de colores Duración
+							estimada entre 5 y 6 años Antigranizo Espesores de 400 a 750
+							micrones Variedad de Colores.</div
+						>
+					</div>
+				</div>
+
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">Lona Acrílica</div>
+						<div class="theBack"
+							>Tejido con fibra acrílica tintada a la masa Colores vivos y
+							resistentes Resistencia al desgaste Excepcional comportamiento en
+							la intemperie Acabado que facilita la limpieza Alta protección
+							solar Paños de 1,40 metros de ancho Uniones cosidas con doble
+							costura hilo de nylon Duración estimada 7 años.</div
+						>
+					</div>
+				</div>
+
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">Rafia</div>
+						<div class="theBack"
+							>Tejido monofilamento Impermeable Apto cubrecercos Apto cobertura
+							liviana de elementos Color verde o azul Duración estimada entre 2
+							y 3 años.</div
+						>
+					</div>
+				</div>
+
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">Media sombra Premium</div>
+						<div class="theBack"
+							>Tejido Raschel. Fabricada con polietileno virgen. Tejido de punto
+							por urdimbre. Estabilizantes anti UV. Duración aproximada 3
+							años.</div
+						>
+					</div>
+				</div>
+
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">Cubrecerco Importado y Nacional</div>
+						<div class="theBack"
+							>Tejido monofilamento Confección con refuerzo de cobertura
+							Duración estimada entre 2 y 3 años.</div
+						>
+					</div>
+				</div>
+
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">Coversol</div>
+						<div class="theBack"
+							>Tejido de poliéster recubierto 70% Paños de 1,50 metros de ancho
+							Estabilizantes anti UV Uniones por termofusión de 20 mm de ancho
+							Colores disponibles: Negro, Gris, Verde y Azul Antigranizo
+							Duración estimada entre 5 y 6 años.</div
+						>
+					</div>
+				</div>
+
+				<div class="maincontainer">
+					<div class="thecard">
+						<div class="theFront">PVC Cristal Transparente</div>
+						<div class="theBack"
+							>PVC N°5 PVC N°3 Lámina de PVC transparente alto brillo y
+							transparencia Permite uniones soldadas por termofusión.
+							Impermeable Filtro UV Duración aproximada 4 años.</div
 						>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="containerMateriales" id="Materiales">
-			<h1>MATERIALES</h1>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#lonaLitoral"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					Lona Litoral/Zonda/Premium UTTER
-				</a>
-			</p>
-			<div class="collapse" id="lonaLitoral">
-				<div class="card card-body">
-					Tejido de poliéster recubierto con PVC en ambas caras. Totalmente
-					impermeable Paños de 1,50 y 1,00 metros de ancho Uniones por
-					termofusión de 20 mm de ancho Gran variedad de colores Duración
-					estimada entre 5 y 6 años Antigranizo Espesores de 400 a 750 micrones
-					Variedad de Colores.
-				</div>
-			</div>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#lonaAcrilica"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					Lona Acrílica
-				</a>
-			</p>
-			<div class="collapse" id="lonaAcrilica">
-				<div class="card card-body">
-					Tejido con fibra acrílica tintada a la masa Colores vivos y
-					resistentes Resistencia al desgaste Excepcional comportamiento en la
-					intemperie Acabado que facilita la limpieza Alta protección solar
-					Paños de 1,40 metros de ancho Uniones cosidas con doble costura hilo
-					de nylon Duración estimada 7 años
-				</div>
-			</div>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#Rafia"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					Rafia
-				</a>
-			</p>
-			<div class="collapse" id="Rafia">
-				<div class="card card-body">
-					Tejido monofilamento Impermeable Apto cubrecercos Apto cobertura
-					liviana de elementos Color verde o azul Duración estimada entre 2 y 3
-					años.
-				</div>
-			</div>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#mediaSombra"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					Media sombra Premium
-				</a>
-			</p>
-			<div class="collapse" id="mediaSombra">
-				<div class="card card-body">
-					Tejido Raschel. Fabricada con polietileno virgen. Tejido de punto por
-					urdimbre. Estabilizantes anti UV. Duración aproximada 3 años.
-				</div>
-			</div>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#cubreCerco"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					Cubrecerco Importado y Nacional
-				</a>
-			</p>
-			<div class="collapse" id="cubreCerco">
-				<div class="card card-body">
-					Tejido monofilamento Confección con refuerzo de cobertura Duración
-					estimada entre 2 y 3 años.
-				</div>
-			</div>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#Coversol"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					Coversol
-				</a>
-			</p>
-			<div class="collapse" id="Coversol">
-				<div class="card card-body">
-					Tejido de poliéster recubierto 70% Paños de 1,50 metros de ancho
-					Estabilizantes anti UV Uniones por termofusión de 20 mm de ancho
-					Colores disponibles: Negro, Gris, Verde y Azul Antigranizo Duración
-					estimada entre 5 y 6 años.
-				</div>
-			</div>
-			<p>
-				<a
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					href="#pvc"
-					role="button"
-					aria-expanded="false"
-					aria-controls="collapseExample">
-					PVC Cristal Transparente
-				</a>
-			</p>
-			<div class="collapse" id="pvc">
-				<div class="card card-body">
-					PVC N°5 PVC N°3 Lámina de PVC transparente alto brillo y transparencia
-					Permite uniones soldadas por termofusión. Impermeable Filtro UV
-					Duración aproximada 4 años.
-				</div>
-			</div>
-		</div>
-
+		<!-- SECCION CONTACTO -->
 		<div class="containerContacto" id="Contacto">
+			<h1 class="contacto">CONTACTO</h1>
 			<div class="container col-xxl-8 px-4 py-5">
 				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 					<div class="col-10 col-sm-8 col-lg-6">
@@ -423,15 +396,18 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
+		<!-- SECCION FOOTER -->
 		<footer>
 			<span class="mb-3 mb-md-0 text-muted">© 2023 Wil Dev</span>
 		</footer>
-		<script src="./app.js"></script>
-		<script
+
+		<!-- SECCION JAVASCRIPT -->
+		<script src="./js/app.js"></script>
+		<script src="./js/menu.js"></script>
+		<scripts
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-			crossorigin="anonymous"></script>
+			crossorigin="anonymous"></scripts>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
 			integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
