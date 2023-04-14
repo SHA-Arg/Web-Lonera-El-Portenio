@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-body {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
+}
+body {
+	min-height: 100vh;
+	/* overflow: hidden; */
+}
+::-webkit-scrollbar {
+	display: none;
 }
 
 .productos,
 .servicios,
 .materiales,
 .contacto {
+	box-shadow: 5px 5px 20px rgba(10, 255, 83, 0.4);
+	transform: translateY(-3%);
 	text-shadow: 4px 4px 2px rgba(230, 222, 222, 0.6);
 	color: rgb(15, 15, 15);
 	font-style: bold;
@@ -18,11 +27,6 @@ body {
 	margin-top: 50px;
 	text-align: center;
 	vertical-align: text-bottom;
-	/* font-size: xx-large;
-	font-family: Arial, Helvetica, sans-serif;
-	color: black;
-	display: flex;
-	text-align: center; */
 }
 
 /**-----------------------**/
@@ -157,22 +161,9 @@ a {
 	transition-delay: calc(var(--transition-delay) * 3);
 }
 
-.menu[data-animation="diagonal"] .border-left {
-	transform-origin: top left;
-}
-
-.menu[data-animation="diagonal"] .border-right,
-.menu[data-animation="diagonal"] .border-bottom {
-	transform-origin: bottom right;
-}
-
-.menu[data-animation="diagonal"] a:hover [class^="border"] {
-	transition-delay: 0s;
-}
-
-.contenedorPagina {
-	background-color: aqua;
-}
+/**-----------------------**/
+/**  Media Querys         **/
+/**-----------------------**/
 
 @media (max-width: 992px) {
 	.navbar-expand-lg .navbar-collapse {
@@ -183,6 +174,10 @@ a {
 	.menu {
 		display: none;
 	}
+	.containerNosotros {
+		padding-top: 50px;
+		align-items: center;
+	}
 }
 
 /**-----------------------**/
@@ -190,16 +185,30 @@ a {
 /**-----------------------**/
 .containerNosotros {
 	width: 100%;
+	height: 100vh;
 	align-content: center;
 	padding-top: 100px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../src/img/Toldo1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: white;
 }
+
 .container {
 	width: 100%;
+	height: 100vh;
 	display: flex;
-	max-width: 1100px;
+	max-width: 1400px;
 	margin: auto;
 	align-content: center;
 }
+
+.btn {
+	color: white;
+}
+
 .btn:hover {
 	box-shadow: 5px 5px 20px rgba(10, 255, 83, 0.4);
 	transform: translateY(-3%);
@@ -291,9 +300,16 @@ a {
 /**  SECTCION  SERVICIOS  **/
 /**-----------------------**/
 .containerServicios {
+	height: 100vh;
 	background-color: white;
 	align-content: center;
 	padding-top: 80px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(42, 39, 39, 0.5)),
+		url(../src/img/Toldo2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: white;
 }
 
 /**-----------------------**/
@@ -317,8 +333,8 @@ a {
 	position: relative;
 	justify-content: space-around;
 	flex-wrap: nowrap;
-	width: 300px;
-	height: 320px;
+	width: 250px;
+	height: 300px;
 	padding-top: 30px;
 }
 .thecard {
@@ -372,45 +388,112 @@ a {
 /**  SECTCION  CONTACTO    */
 /**-----------------------**/
 .containerContacto {
-	padding-top: 80px;
-	margin-top: 200px;
-	background-color: white;
-	margin-left: 10%;
-	margin-right: 10%;
+	height: 100vh;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12.5em;
+}
 
-	align-content: center;
+ul {
+	display: inline;
+	list-style: none;
+	padding: 0px;
+	font-size: large;
 }
-.form {
-	width: 400px;
-	height: 300px;
-	background: #e6e6e6;
-	border-radius: 23px;
-	box-shadow: 0 0 40px -10px #000;
-	margin: calc(9vh - 20px) auto;
-	padding: 10px 20px;
-	max-width: calc(100vw - 40px);
-	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
-	position: relative;
-}
-h2 {
-	margin: 10px 0;
 
-	width: 180px;
-	color: #78788c;
-	border-bottom: 3px solid #78788c;
+.logo {
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 30px;
 }
-input {
+
+.logo span {
+	color: #0eb763;
+}
+
+.contact-wrapper {
+	box-shadow: 0 0 40px 0 rgba(52, 211, 37, 0.541);
+}
+
+.contact-wrapper > * {
+	padding: 1em;
+}
+
+.contact-form {
+	background: #ddd9d9ce;
+}
+
+.contact-form form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+	display: block;
+}
+
+.contact-form form p {
+	margin: 0;
+	padding: 1em;
+}
+
+.contact-form form .block {
+	grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
 	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
+	padding: 0.7em;
+	border: none;
 	background: none;
-	outline: none;
-	resize: none;
+	outline: 0;
+	color: #fff;
+	border-bottom: 1px solid #1dcc43;
+}
+
+.contact-form form button {
+	background: #5ab70e;
 	border: 0;
-	font-family: "Montserrat", sans-serif;
-	transition: all 0.3s;
-	border-bottom: 2px solid #bebed2;
+	text-transform: uppercase;
+	padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+	background: #30d6676e;
+	color: #fff;
+	transition: background-color 1s ease-out;
+	outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+	background: #34804b;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+	text-align: center;
+}
+
+/* LARGE SIZE */
+@media (min-width: 700px) {
+	.contact-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+	.contact-wrapper > * {
+		padding: 2em;
+	}
+	.contact-info h4,
+	.contact-info ul,
+	.contact-info p {
+		text-align: left;
+	}
 }
 
 /**-----------------------**/
