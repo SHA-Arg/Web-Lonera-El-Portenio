@@ -1,0 +1,99 @@
+body {
+	background-image: url("./src/img/fondo\ lonera.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/**-----------------------**/
+/**  SECTCION  NAVBAR     **/
+/**-----------------------**/
+
+.navbar {
+	position: fixed;
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-collapse {
+		display: flex !important;
+		flex-basis: auto;
+		justify-content: flex-end;
+	}
+}
+
+/**-----------------------**/
+/**  SECTCION  NOSOTROS   **/
+/**-----------------------**/
+.containerNosotros {
+}
+/**-----------------------**/
+/**  SECTCION  PRODUCTOS  **/
+/**-----------------------**/
+.containerProductos {
+}
+
+/**-----------------------**/
+/**  SECTCION  SERVICIOS  **/
+/**-----------------------**/
+.containerServicios {
+}
+
+/**-----------------------**/
+/**  SECTCION  MATERIALES **/
+/**-----------------------**/
+.containerMateriales {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 90px;
+}
+
+/**-----------------------**/
+/**  SECTCION  CONTACTO    */
+/**-----------------------**/
+.containerContacto {
+	margin-top: 200px;
+}
+.form {
+	width: 400px;
+	height: 300px;
+	background: #e6e6e6;
+	border-radius: 23px;
+	box-shadow: 0 0 40px -10px #000;
+	margin: calc(9vh - 20px) auto;
+	padding: 10px 20px;
+	max-width: calc(100vw - 40px);
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+}
+h2 {
+	margin: 10px 0;
+
+	width: 180px;
+	color: #78788c;
+	border-bottom: 3px solid #78788c;
+}
+input {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background: none;
+	outline: none;
+	resize: none;
+	border: 0;
+	font-family: "Montserrat", sans-serif;
+	transition: all 0.3s;
+	border-bottom: 2px solid #bebed2;
+}
+
+/**-----------------------**/
+/**   SECTCION   FOOTER    */
+/**-----------------------**/
+footer {
+	background: #aeacac;
+	color: rgb(10, 9, 9);
+	font-size: x-large;
+	text-align: center;
+	padding: 20px;
+}
