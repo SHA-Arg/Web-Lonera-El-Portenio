@@ -319,6 +319,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	height: 100vh;
 	justify-content: space-around;
 }
 .containerTarjetas {
