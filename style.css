@@ -1,9 +1,5 @@
 body {
-  background: linear-gradient(
-    to bottom right,
-    rgb(50, 3, 223),
-    rgb(1, 212, 19)
-  );
+  
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -13,14 +9,18 @@ body {
 /**-----------------------**/
 
 .navBar {
-  background: rgb(0, 250, 237);
+	
   height: 150px;
   width: 100%;
   
   align-content: center;
 }
 .navLeft {
-  background-color: #3a3d4b;
+	background: linear-gradient(
+		to bottom right,
+		rgb(223, 213, 74),
+		rgb(11, 161, 24)
+	  );
 
   width: 70%;
   height: 100%;
@@ -32,10 +32,15 @@ body {
   
 }
 .navRight {
-  background-color: #3a3d4b;
+
   width: 30%;
   height: 100%;
   float: left;
+  background: linear-gradient(
+		to bottom left,
+		rgb(223, 213, 74),
+		rgb(11, 161, 24)
+	  );
 }
 /**.menu{
 
@@ -207,6 +212,12 @@ background-color: aqua;
 }
 }
 
+
+.imagen_principal{
+
+	width: 100%;
+	height: 300px;
+}
 /**-----------------------**/
 /**  SECTCION  NOSOTROS   **/
 /**-----------------------**/
