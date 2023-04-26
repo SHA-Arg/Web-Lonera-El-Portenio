@@ -1,0 +1,16 @@
+/**-----------------------**/
+/**  SECTCION  SERVICIOS  **/
+/**-----------------------**/
+.containerServicios {
+	height: 100vh;
+	background-color: white;
+	align-content: center;
+	padding-top: 80px;
+
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(42, 39, 39, 0.5)),
+		url(../src/img/Toldo2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: white;
+}

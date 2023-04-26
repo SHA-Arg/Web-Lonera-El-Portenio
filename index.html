@@ -7,6 +7,9 @@
 		<!-- GOOGLE FONTs -->
 		<link
 			href="https://fonts.googleapis.com/css?family=Quicksand"
+			rel="stylesheet" />	
+			<link
+			href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Dosis:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 			rel="stylesheet" />
 		<!-- FONT AWESOME -->
 		<link
@@ -24,11 +27,16 @@
 		<link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Dosis:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-			rel="stylesheet" />
-		<link rel="stylesheet" href="./css/style.css" />
+		
+		<link rel="stylesheet" href="./css/principal.css" />
+		<link rel="stylesheet" href="./css/productos.css">
 		<link rel="stylesheet" href="./css/whatsapp.css" />
+		<link rel="stylesheet" href="./css/contacto.css" />
+		<link rel="stylesheet" href="./css/materiales.css" />
+		<link rel="stylesheet" href="./css/servicios.css" />
+		<link rel="stylesheet" href="./css/nosotros.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/navbar.css" />
 
 		<title>Lonera El Porteño</title>
 	</head>
@@ -54,7 +62,7 @@
 		</a>
 
 		<!-- NAV BAR -->
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg" id="nav">
 			<div class="nav__container">
 				<img
 					id="logo_lonera"
@@ -62,7 +70,8 @@
 					width="100px"
 					height="100px"
 					alt="" />
-				<button
+					<label for="menu" class="nav__label">
+					<button
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
@@ -72,8 +81,11 @@
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<ul class="menu navbar-nav">
-					<li class="nav-item">
+				</label>
+				<input type="checkbox" id="menuToggler" class="nav__input" />
+				
+				<ul class="menu navbar-nav" id="menu-lg">
+					<li class="nav-item" >
 						<a href="#Nosotros">
 							NOSOTROS
 							<span class="border border-top"></span>
@@ -121,8 +133,8 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="scrol"></div>	
-
+		<div class="scrol"></div>
+		
 		<!-- SECCION ACERCA DE NOSOTROS -->
 		<div class="containerNosotros" id="Nosotros">
 			<div class="container col-xxl-8 px-4 py-5">
