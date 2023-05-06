@@ -1,13 +1,5 @@
-let nav = document.getElementById("nav");
-let menu = document.getElementById("menu-lg");
+const nav = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
-	let value = window.scrollY;
-	if (value > 0) {
-		nav.classList.add("nav-scrolled");
-		menu.classList.add("menu-lg-scrolled");
-	} else {
-		nav.classList.remove("nav-scrolled");
-		menu.classList.remove("menu-lg-scrolled");
-	}
+window.addEventListener("scroll", function () {
+	navbar.classList.toggle("active", window.scrollY > 0);
 });
