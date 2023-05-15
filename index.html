@@ -30,11 +30,12 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/whatsapp.css" />
 
+
 		<title>El Porteño </title>
 	</head>
 
-	<body>
-		<!--** BANER DE MANTENIMIENTO -->
+	<body class="pagina_comp">
+			<!--** BANER DE MANTENIMIENTO -->
 		<!-- <div class="container">
 			<h1>PROXIMAMENTE www!</h1>
 			<img
@@ -54,14 +55,15 @@
 		</a>
 
 		<!-- NAV BAR -->
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-xl">
 			<div class="nav__container">
 				<img
 					id="logo_lonera"
-					src="./src/img/Logo.png"
-					width="100px"
-					height="100px"
-					alt="" />
+					src="./src/img/logomejorado.png"
+					width="140px"
+					height="110px"
+					alt="" 
+					/>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -76,90 +78,77 @@
 					<li class="nav-item">
 						<a href="#Nosotros">
 							NOSOTROS
-							<span class="border border-top"></span>
-							<span class="border border-right"></span>
-							<span class="border border-bottom"></span>
-							<span class="border border-left"></span>
+							
 						</a>
 					</li>
-					<li class="nav-item nav-link">
+					<li class="nav-item ">
 						<a href="#Productos">
 							PRODUCTOS
-							<span class="border border-top"></span>
-							<span class="border border-right"></span>
-							<span class="border border-bottom"></span>
-							<span class="border border-left"></span>
+							
 						</a>
 					</li>
 					<li class="nav-item">
 						<a href="#Servicios">
 							SERVICIOS
-							<span class="border border-top"></span>
-							<span class="border border-right"></span>
-							<span class="border border-bottom"></span>
-							<span class="border border-left"></span>
+							
 						</a>
 					</li>
 					<li class="nav-item">
 						<a href="#Materiales">
 							MATERIALES
-							<span class="border border-top"></span>
-							<span class="border border-right"></span>
-							<span class="border border-bottom"></span>
-							<span class="border border-left"></span>
+							
 						</a>
 					</li>
 					<li class="nav-item">
 						<a href="#Contacto">
 							CONTACTO
-							<span class="border border-top"></span>
-							<span class="border border-right"></span>
-							<span class="border border-bottom"></span>
-							<span class="border border-left"></span>
+							
 						</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<div class="scrol"></div>
+		<div class="scrol"></div>	
 
 		<!-- SECCION ACERCA DE NOSOTROS -->
 		<div class="containerNosotros" id="Nosotros">
 			<div class="container">
-				<div
-					class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5"
-					style="margin-top: 250px">
-					<h1 class="nosotros display-5 fw-bold lh-1 mb-3"
-						>LONERA "EL PORTEÑO"</h1
-					>
-					<p class="lead">
-						Somo una empresa familiar nacida en la provincia de Tucumán en el
-						año 2015 Una de nuestras metas es poder brindar productos y
-						servicios de excelencia. Ponemos a su disposición un completo
-						servicio que incluye el asesoramiento en la elección de la lona y la
-						confección, fabricación e instalación de todo tipo. Contamos con
-						personal idóneo para cumplir sus proyectos de la mejor manera
-						posible El personal tiene alta profesionalidad y su seriedad son sus
-						principales características.
-					</p>
-					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-						<button
-							type="button"
-							class="btn btn-outline-success btn-lg px-4 me-md-2"
-							>Productos</button
+				<div class="Nosotros">
+						<h1 class="nosotros display-6 fw-bold lh-1 mb-3" id="TituloNosotros"
+							>LONERA "EL PORTEÑO"</h1
 						>
-						<button type="button" class="btn btn-outline-success btn-lg px-4"
-							>Contacto</button
-						>
-					</div>
-				</div>
-			</div>
+						<p class="lead">
+							Somo una empresa familiar nacida en la provincia de Tucumán en el
+							año 2015 Una de nuestras metas es poder brindar productos y
+							servicios de excelencia. Ponemos a su disposición un completo
+							servicio que incluye el asesoramiento en la elección de la lona y
+							la confección, fabricación e instalación de todo tipo. Contamos
+							con personal idóneo para cumplir sus proyectos de la mejor manera
+							posible El personal tiene alta profesionalidad y su seriedad son
+							sus principales características.
+						</p>
+						<div class="seccion_boton" >
+							<button 
+								type="button"
+								class="boton_nosotros"
+								onclick="location.href='#Productos'"
+								>Productos</button
+							>
+							<button type="button" class="boton_nosotros"
+							onclick="location.href='#Contacto'">
+								Contacto
+								</button>
+						</div>			
+				
+			</div> 
+		</div>
 		</div>
 
 		<!-- SECCION PRODUCTOS -->
-		<div class="containerProductos" id="Productos">
+		
+		<div class="containerProductos" >
 			<!--   Tarjetas-->
-			<h1 class="productos">PRODUCTOS</h1>
+			<h1 class="productos" id="Productos">PRODUCTOS</h1>
 			<div class="container-card">
 				<div class="card">
 					<figure>
@@ -168,24 +157,44 @@
 					<div class="contenido-card">
 						<h3>LONAS PARA CAMIONES/SIDERS</h3>
 						<p>Las mejores y mas resistentes.</p>
+						
 					</div>
 				</div>
 				<div class="card">
-					<figure>
-						<img src="./src/img/productos/CARRITO.png" />
-					</figure>
+					
+					<img  src="./src/img/productos/toldos/toldos3.jpg" />
+					
+				
+		
+				
+			
 					<div class="contenido-card">
 						<h3>FUNDAS PARA CARRITO/ TRAILER</h3>
 						<p>Los mejores y mas resistentes.</p>
+						
 					</div>
+
 				</div>
 				<div class="card">
-					<figure>
-						<img src="./src/img/productos/CUBREPILE.png" />
-					</figure>
+					
+
+					
+						
+						<img class="mySlides" src="./src/img/productos/cubrepiletas/cubre1.png" />
+						<!--	<img   class="mySlides"src="./src/img/productos/cubrepiletas/cubre2.jpg" />
+						<img  class="mySlides" src="./src/img/productos/cubrepiletas/cubre5.jpg" />
+					<img class="mySlides" src="./src/img/productos/cubrepiletas/cubre4.jpeg" />
+						<img class="mySlides"  src="./src/img/productos/cubrepiletas/cubre6.jpg" />
+			
+					
+					<div id="Arrows">
+						<i class="fa fa-chevron-left fa-2x" aria-hidden="true"onclick="plusDivs(-1)"></i>
+						<i  class="fa fa-chevron-right fa-2x" aria-hidden="true"onclick="plusDivs(1)"></i>
+					</div>-->
 					<div class="contenido-card">
 						<h3>COBERTORES DE PILETAS</h3>
 						<p>Los mejores y mas resistentes.</p>
+						
 					</div>
 				</div>
 			</div>
@@ -197,6 +206,7 @@
 					<div class="contenido-card">
 						<h3>TOLDOS </h3>
 						<p>Los mejores y mas resistentes.</p>
+						
 					</div>
 				</div>
 				<div class="card">
@@ -204,8 +214,9 @@
 						<img src="./src/img/productos/CERRAMIENTOS.png" />
 					</figure>
 					<div class="contenido-card">
-						<h3>CIERRAMIENTOS</h3>
+						<h3>CERRAMIENTOS</h3>
 						<p>Los mejores y mas resistentes.</p>
+						
 					</div>
 				</div>
 				<div class="card">
@@ -215,6 +226,7 @@
 					<div class="contenido-card">
 						<h3>CORTINAS BLACKOUT</h3>
 						<p>Los mejores y mas resistentes.</p>
+					
 					</div>
 				</div>
 			</div>
@@ -226,6 +238,7 @@
 					<div class="contenido-card">
 						<h3>INFLABLES</h3>
 						<p>Los mejores y mas resistentes.</p>
+				
 					</div>
 				</div>
 				<div class="card">
@@ -235,6 +248,7 @@
 					<div class="contenido-card">
 						<h3>LONA DE EMBARCACIONES</h3>
 						<p>Los mejores y mas resistentes.</p>
+			
 					</div>
 				</div>
 				<div class="card">
@@ -244,25 +258,29 @@
 					<div class="contenido-card">
 						<h3>SOLUCIONES RURALES</h3>
 						<p>Los mejores y mas resistentes.</p>
+				
 					</div>
 				</div>
 			</div>
 		</div>
 
+		
+
+
 		<!-- SECCION SERVICIOS -->
-		<div class="containerServicios" id="Servicios">
-			<h1 class="servicios">SERVICIOS</h1>
+		<div class="containerServicios" >
+			<h1 class="servicios" id="Servicios">SERVICIOS</h1>
 			<div class="container col-xxl-8 px-4 py-5">
 				<div class="encuadre_servicio">
 					<div class="col_mant">
-						<h3 class="display-5 fw-bold lh-1 mb-3">MANTENIMIENTO:</h3>
+						<h3 class="display-6 fw-bold lh-1 mb-3">MANTENIMIENTO:</h3>
 						<p class="lead"
 							>Hacemos revisiones de tu instalación para asegurarnos de que
 							sigue en las mejores condiciones.</p
 						>
 					</div>
 					<div class="col_repar">
-						<h1 class="display-5 fw-bold lh-1 mb-3">REPARACION:</h1>
+						<h1 class="display-6 fw-bold lh-1 mb-3">REPARACION:</h1>
 						<p class="lead"
 							>No lo tires si tiene arreglo. Si tu instalación ha sufrido un
 							desperfecto y necesita una reparación. En estos años de
@@ -280,16 +298,19 @@
 		</div>
 
 		<!-- SECCION MATERIALES -->
-		<div class="containerMateriales" id="Materiales">
+
+		<h1 class="materiales" id="Materiales">MATERIALES</h1>
+		<div class="containerMateriales" >
+		
 			<div class="containerTarjetas">
+					
 				<div class="maincontainer">
 					<div class="thecard">
 						<div class="theFront">Lona Litoral Zonda/Premium UTTER</div>
 						<div class="theBack"
-							>Tejido de poliéster recubierto con PVC en ambas caras que es
-							completamente impermeable. Viene en paños de 1,50 y 1,00 metros de
-							ancho. Es antigranizo y tiene espesores de 400 a 750
-							micrones.</div
+							>Tejido de poliéster recubierto con PVC en ambas caras que es completamente impermeable. 
+							Viene en paños de 1,50 y 1,00 metros de ancho.
+							Es antigranizo y tiene espesores de 400 a 750 micrones.</div
 						>
 					</div>
 				</div>
@@ -298,11 +319,9 @@
 					<div class="thecard">
 						<div class="theFront">Lona Acrílica</div>
 						<div class="theBack"
-							>Tejido hecho de fibra acrílica tintada, con colores vivos,
-							resistentes al desgaste y a la intemperie. Tiene un acabado que
-							facilita la limpieza y una alta protección solar. Los paños tienen
-							1,40 metros de ancho y las uniones están cosidas con doble costura
-							con hilo de nylon.</div
+							>Tejido hecho de fibra acrílica tintada, con colores vivos, resistentes al desgaste
+							y a la intemperie. Tiene un acabado que facilita la limpieza y una alta protección solar.
+							Los paños tienen 1,40 metros de ancho y las uniones están cosidas con doble costura con hilo de nylon.</div
 						>
 					</div>
 				</div>
@@ -322,8 +341,8 @@
 						<div class="theFront">Media sombra Premium</div>
 						<div class="theBack"
 							>Tejido Raschel. Fabricada con polietileno virgen. Tejido de punto
-							por urdimbre. Estabilizantes anti UV.
-						</div>
+							por urdimbre. Estabilizantes anti UV. </div
+						>
 					</div>
 				</div>
 
@@ -332,7 +351,8 @@
 						<div class="theFront">Cubrecerco Importado y Nacional</div>
 						<div class="theBack"
 							>Tejido monofilamento Confección con refuerzo de cobertura
-						</div>
+							</div
+						>
 					</div>
 				</div>
 
@@ -343,7 +363,8 @@
 							>Tejido de poliéster recubierto 70% Paños de 1,50 metros de ancho
 							Estabilizantes anti UV Uniones por termofusión de 20 mm de ancho
 							Colores Variados.
-						</div>
+							</div
+						>
 					</div>
 				</div>
 
@@ -370,34 +391,35 @@
 		</div>
 
 		<!-- SECCION CONTACTO -->
-		<div class="containerContacto" id="Contacto">
-			<h1 class="logo"><span>CONTACTANOS</span></h1>
+		<div class="containerContacto" >
+			<h1 class="logo" id="Contacto"><span>CONTACTANOS</span></h1>
 
 			<div class="contact-wrapper animated bounceInUp">
 				<div class="contact-form">
-					<form id="form" action="mail.php" method="POST" >
+					<form >
 						<p>
-							<label for="name">Nombre</label>
-							<input name="nombre" required type="text" autocapitalize="words" autocomplete="off" placeholder="Tu Nombre" />
+							<label>Nombre</label>
+							<input type="text" name="fullname" placeholder="Tu Nombre" />
 						</p>
 						<p>
-							<label for="email">Email</label>
-							<input type="email" name="email"  required autocomplete="off" placeholder="Tu Correo" />
+							<label>Email</label>
+							<input type="email" name="email" placeholder="Tu Correo" />
 						</p>
 						<p>
 							<label>Telefono</label>
 							<input type="tel" name="phone" placeholder="Tu Celular" />
 						</p>
 						<p class="block">
-							<label for="nombre" class="form-label">Tu Consulta</label>
+							<label>Tu Consulta</label>
 							<textarea name="message" rows="3"></textarea>
 						</p>
-						<p class="block">
-							<button type="submit" > ENVIAR </buttont>
-						</p>
+						<a class="boton_enviar" href="#openModal">
+							ENVIAR
+						</a>
 					</form>
-					<!-- * METODO CON JS PARA QUE EL USUARIO MANDE EL MAIL CON SU APP DE CONFIANZA  -->
-					<!-- <a href="mailto:wildevsoluciones@gmail.com" id="mailTo"></a> -->
+					
+
+					
 				</div>
 				<div class="contact-info">
 					<h4>FABRICA</h4>
@@ -424,20 +446,35 @@
 			</div>
 		</div>
 
+		
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2 >Gracias por su mensaje</h2>
+		
+		<h4>En Breve les respondemos</h4>
+	</div>
+</div>
+
 		<!-- SECCION FOOTER -->
-		<footer>
-			<a href="http://www.wildev.com.ar" class="mb-3 mb-md-0 text-muted"
-				>© 2023 Wil Dev</a
-			>
+		<footer >
+			<a href="http://www.wildev.com.ar" class="mb-3 mb-md-0 text-muted" >© 2023 Wil Dev</a>
 		</footer>
 
 		<!-- SECCION JAVASCRIPT -->
-		<!-- * METODO CON JS PARA QUE EL USUARIO MANDE EL MAIL CON SU APP DE CONFIANZA  -->
-		<!-- <script src="./js/form.js"></script> -->
-
+		
+		<script src=".js/app.js"></script>
+		<script src="./js/menu.js"></script>
+		
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
 			integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
 			crossorigin="anonymous"></script>
+		
+		
+			
+
+		
 	</body>
 </html>
