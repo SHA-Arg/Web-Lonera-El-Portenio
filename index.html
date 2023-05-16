@@ -55,7 +55,7 @@
 		</a>
 
 		<!-- NAV BAR -->
-		<nav class="navbar navbar-expand-xl">
+		<nav class="navbar navbar-expand-lg">
 			<div class="nav__container">
 				<img
 					id="logo_lonera"
@@ -144,8 +144,7 @@
 		</div>
 		</div>
 
-		<!-- SECCION PRODUCTOS -->
-		
+		<!-- SECCION PRODUCTOS -->		
 		<div class="containerProductos" >
 			<!--   Tarjetas-->
 			<h1 class="productos" id="Productos">PRODUCTOS</h1>
@@ -333,10 +332,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		
-
+		</div>	
 
 		<!-- SECCION SERVICIOS -->
 		<div class="containerServicios" >
@@ -369,12 +365,9 @@
 		</div>
 
 		<!-- SECCION MATERIALES -->
-
 		<h1 class="materiales" id="Materiales">MATERIALES</h1>
-		<div class="containerMateriales" >
-		
-			<div class="containerTarjetas">
-					
+		<div class="containerMateriales" >		
+			<div class="containerTarjetas">					
 				<div class="maincontainer">
 					<div class="thecard">
 						<div class="theFrontLonLit">Lona Litoral Zonda/Premium UTTER</div>
@@ -490,12 +483,15 @@
 						</p>
 						<p class="block">
 							<label>Tu Consulta</label>
-							<textarea name="message" rows="3"></textarea>
+							<textarea name="msg" placeholder="Tu Mensaje" rows="3"></textarea>
 						</p>
 						<a class="boton_enviar" href="#openModal">
 							ENVIAR
 						</a>
 					</form>
+					<?php
+						include("mail.php");
+					?>
 					
 
 					
