@@ -74,8 +74,6 @@ body {
 }
 .nav-item {
 	text-align: center;
-	
-	
 	min-width: 130px;
 	height: 40px;
 	margin-left: 10px;
@@ -297,7 +295,6 @@ a {
 	
 	display: flex;
 	max-width: 1400px;
-
 	
 	align-content: center;
 }
