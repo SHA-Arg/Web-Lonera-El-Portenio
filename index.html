@@ -475,23 +475,32 @@
 
 			<div class="contact-wrapper animated bounceInUp">
 				<div class="contact-form">
-					<form >
-						<p>
-							<label>Nombre</label>
-							<input type="text" name="fullname" placeholder="Tu Nombre" />
-						</p>
-						<p>
-							<label>Email</label>
-							<input type="email" name="email" placeholder="Tu Correo" />
-						</p>
-						<p>
-							<label>Telefono</label>
-							<input type="tel" name="phone" placeholder="Tu Celular" />
-						</p>
-						<p class="block">
-							<label>Tu Consulta</label>
-							<textarea name="message" rows="3"></textarea>
-						</p>
+					<form method="post">
+					<p>
+						<label>Nombre</label>
+						<input type="text" name="nombre" placeholder="Tu Nombre" autocapitalize="words" autocomplete="off" />
+					</p>
+					<p>
+						<label>Email</label>
+						<input type="email" name="email" placeholder="Tu Correo" autocomplete="off" />
+					</p>
+					<p>
+						<label>Telefono</label>
+						<input type="tel" name="phone" placeholder="Tu Celular" />
+					</p>
+					<div>
+					<span>Asunto del Mensaje</span>
+					<select name="asunto" id="">
+						<option value="Consulta">Consulta</option>
+						<option value="Presupuesto">Presupuesto</option>
+						<option value="Reclamo">Reclamo</option>
+						<option value="Otro">Otro</option> 
+					</select>
+					</div>
+					<p class="block">
+						<label>Tu Consulta</label>
+						<textarea name="msg" placeholder="Tu Mensaje" rows="3"></textarea>
+					</p>
 						<a class="boton_enviar" href="#openModal">
 							ENVIAR
 						</a>
