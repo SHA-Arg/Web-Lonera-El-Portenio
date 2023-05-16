@@ -67,14 +67,13 @@ body {
 .navbar-expand-lg {
 	background-color: white;
 	position: fixed;
-	height: 100px;
+	height: 150px;
 	width: 100%;
 	justify-content: center;
 	z-index: 1;
 }
 .nav-item {
 	text-align: center;
-
 	min-width: 130px;
 	height: 40px;
 	margin-left: 10px;
