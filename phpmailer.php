@@ -34,3 +34,5 @@ $mailer->AltBody = strip_tags($body);
 $rta = $mailer->send();
 
 var_dump($rta);
+
+header('Location: gracias.html');
