@@ -261,7 +261,7 @@ a {
 	align-content: center;
 	
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(../src/img/principal.jpg);
+		url(../src/img/principal.webp);
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
