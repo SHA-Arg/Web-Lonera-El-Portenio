@@ -889,12 +889,28 @@ ul {
 /**-----------------------**/
 /**   SECTION   FOOTER    */
 /**-----------------------**/
+.wildev{ 
+	color: white;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size:1.1em;
+	font-weight: bold;
+
+
+}
+.designedby{
+
+	color: white;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size:0.9em;
+	
+}
 footer {
-	background: #017728;
-	color: rgb(10, 9, 9);
-	font-size: x-large;
+	background: #004916;
 	text-align: center;
+	font-size: x-large;
+	
 	padding: 20px;
+	
 }
 .modalDialog {
 	text-align: center;
