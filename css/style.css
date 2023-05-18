@@ -764,7 +764,7 @@ background: linear-gradient(0deg, rgba(69, 153, 0, 0.583) 0%, rgba(201, 198, 3, 
 	
 }
 /**-----------------------**/
-/**  SECTCION  CONTACTO    */
+/**  SECCION  CONTACTO    */
 /**-----------------------**/
 .containerContacto {
 	display: block;
@@ -819,6 +819,8 @@ ul {
 }
 
 .contact-form form .block {
+
+
 	grid-column: 1 / 3;
 }
 
@@ -839,6 +841,7 @@ ul {
 	border: 0;
 	text-transform: uppercase;
 	padding: 1em;
+	color: white;
 }
 
 .contact-form form .boton_enviar:hover,
@@ -848,15 +851,21 @@ ul {
 	transition: background-color 1s ease-out;
 	outline: 0;
 }
+.bloque_enviar{
+	margin-top: 4%;
+	vertical-align: bottom;
+	
+	grid-column: 1/3	;
+	
+}
 .boton_enviar {
-	margin-top: 20px;
-	padding-top: 5px;
-	color:white;
+	
+	margin-top: 10px;
 	height: 80%;
 	border-radius: 15px;
 	text-align: center;
 	background-color: #003a0d;
-	grid-column: 1 / 3;
+	
 }
 .close{
 	text-align: center;
