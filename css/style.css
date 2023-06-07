@@ -6,10 +6,12 @@
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
 }
+
 body {
 	min-height: 100vh;
 	/* overflow: hidden; */
 }
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -37,6 +39,10 @@ body {
 	text-align: center;
 	vertical-align: text-bottom;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .materiales {
 	box-shadow: -18px 0px 35px 0px rgba(0, 0, 0, 0.48);
 	transform: translateY(-100%);
@@ -48,6 +54,7 @@ body {
 	text-align: center;
 	vertical-align: text-bottom;
 }
+
 .contacto {
 	box-shadow: 5px 5px 20px rgba(172, 172, 172, 0.4);
 	transform: translateY(-3%);
@@ -87,6 +94,7 @@ body {
 	justify-content: center;
 	z-index: 1;
 }
+
 .nav-item {
 	text-align: center;
 	min-width: 130px;
@@ -103,15 +111,18 @@ body {
 	background: #ffffff;
 	box-shadow: 0 5px #063311;
 }
+
 .nav-item:hover {
 	box-shadow: 0 3px #4ef500;
 	font-weight: bold;
 	top: 3px;
 }
+
 .nav-item:active {
 	box-shadow: 0 0 #a70d0d;
 	top: 5px;
 }
+
 .nav__container {
 	display: flex;
 	justify-content: space-between;
@@ -121,11 +132,13 @@ body {
 	width: 90%;
 	color: #fff;
 }
+
 .nav__menu {
 	display: grid;
 	grid-auto-flow: column;
 	gap: 1rem;
 }
+
 #logo_lonera {
 	margin-left: 8%;
 	align-items: center;
@@ -155,6 +168,7 @@ a {
 /**  Media Querys         **/
 /**-----------------------**/
 
+<<<<<<< HEAD
  @media (max-width: 1280px) {
 	.containerNosotros {
 		padding-left: 20px;
@@ -164,6 +178,12 @@ a {
 		margin-top: 10%;
 	}
 
+=======
+@media (max-width: 1280px) {
+	.boton_nosotros {
+		margin-top: 10%;
+	}
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	.containerMateriales {
 		margin-bottom: 500px;
 	}
@@ -173,12 +193,18 @@ a {
 		padding-right: 15%;
 		padding-left: 15%;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	.col_repar {
 		padding-right: 2%;
 		margin-left: 2%;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	.col_mant {
 		margin-right: 2%;
 	}
@@ -202,6 +228,7 @@ a {
 	.menu a {
 		padding: 5px;
 	}
+<<<<<<< HEAD
 } 
 
 @media (min-width: 700px) {
@@ -251,6 +278,11 @@ a {
 	.menu a {
 		padding: 5px;
 	}
+=======
+}
+/* LARGE SIZE */
+@media (min-width: 700px) {
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	.body {
 		size-adjust: 67%;
 	}
@@ -268,6 +300,17 @@ a {
 	}
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+	.body {
+		background-color: #000;
+	}
+	.menu #myLinks {
+		display: none;
+	}
+	.container {
+		justify-content: center;
+		padding-right: 15%;
+		padding-left: 15%;
+	}
 	.container-card {
 		flex-wrap: wrap;
 	}
@@ -344,12 +387,17 @@ a {
 /**-----------------------**/
 /**  SECTCION  NOSOTROS   **/
 /**-----------------------**/
+
 .containerNosotros {
 	width: 100%;
 	height: 100vh;
+<<<<<<< HEAD
 
 	align-content: center;
 
+=======
+	align-content: center;
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url(../src/img/principal.webp);
 	background-size: cover;
@@ -357,11 +405,19 @@ a {
 	background-repeat: no-repeat;
 	color: white;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .Nosotros {
 	margin-top: 15%;
 	font-size: 3rem;
 	vertical-align: text-bottom;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .boton_nosotros {
 	margin-top: 10%;
 	font-size: 20px;
@@ -376,6 +432,10 @@ a {
 	border-radius: 7%;
 	box-shadow: #017728 0px 0px 5px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .container {
 	display: flex;
 	max-width: 1400px;
@@ -395,12 +455,14 @@ a {
 /**-----------------------**/
 /**  SECTCION  PRODUCTOS  **/
 /**-----------------------**/
+
 .containerProductos {
 	width: 100%;
 	height: 100%;
 	align-content: center;
 	padding-top: 80px;
 }
+
 /*Cards*/
 .container-card {
 	width: 100%;
@@ -409,18 +471,30 @@ a {
 	margin: auto;
 	align-content: center;
 }
+<<<<<<< HEAD
 .slider-frame {
 	width: 100%;
+=======
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 
+.slider-frame {
+	width: 100%;
 	overflow: hidden;
 }
+<<<<<<< HEAD
 .slider-frame ul {
 	width: 100%;
 
+=======
+
+.slider-frame ul {
+	width: 100%;
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	display: flex;
 	padding: 0;
 	animation: slide 20s infinite;
 }
+<<<<<<< HEAD
 .slider-frame li {
 	list-style: none;
 	width: 100%;
@@ -450,6 +524,40 @@ a {
 	}
 }
 
+=======
+
+.slider-frame li {
+	list-style: none;
+	width: 100%;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {
+		margin-left: 0%;
+	}
+	20% {
+		margin-left: 43%;
+	}
+
+	40% {
+		margin-left: 43%;
+	}
+	60% {
+		margin-left: 86%;
+	}
+	80% {
+		margin-left: 86%;
+	}
+	100% {
+		margin-left: 0%;
+	}
+}
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 #Arrows {
 	display: flex;
 	justify-content: space-between;
@@ -466,7 +574,10 @@ a {
 	height: 40px;
 	padding-top: 5px;
 	padding-left: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	transition: background-color 0.5s, color 0.5s;
 }
 
@@ -495,6 +606,7 @@ a {
 	text-align: center;
 	color: #7a7a7a;
 }
+
 .card {
 	width: 100%;
 	margin: 20px;
@@ -505,28 +617,34 @@ a {
 	transition: all 400ms ease-out;
 	cursor: default;
 }
+
 .card:hover {
 	box-shadow: 5px 5px 20px rgba(0, 37, 12, 0.4);
 	transform: translateY(-3%);
 }
+
 .card img {
 	width: 100%;
 	height: 210px;
 }
+
 .card .contenido-card {
 	padding: 15px;
 	text-align: center;
 }
+
 .card .contenido-card h3 {
 	margin-bottom: 15px;
 	color: #7a7a7a;
 }
+
 .card .contenido-card p {
 	line-height: 1.8;
 	color: #6a6a6a;
 	font-size: 14px;
 	margin-bottom: 5px;
 }
+
 .card .contenido-card a {
 	display: inline-block;
 	padding: 10px;
@@ -538,6 +656,7 @@ a {
 	transition: all 400ms ease;
 	margin-bottom: 5px;
 }
+
 .card .contenido-card a:hover {
 	background: #004424;
 	color: #fff;
@@ -546,6 +665,7 @@ a {
 /**-----------------------**/
 /**  SECTCION  SERVICIOS  **/
 /**-----------------------**/
+
 .containerServicios {
 	height: 120vh;
 	background-color: white;
@@ -564,15 +684,24 @@ a {
 	padding-top: 10px;
 	height: 70%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .col_mant {
 	padding-left: 25px;
 	width: 47%;
 	float: right;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .col_repar {
 	width: 47%;
 	float: left;
 }
+
 /**-----------------------**/
 /**  SECTCION  MATERIALES **/
 /**-----------------------**/
@@ -585,12 +714,14 @@ a {
 	justify-content: center;
 	padding-top: 10px;
 }
+
 .containerTarjetas {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
+
 .maincontainer {
 	display: flex;
 	position: relative;
@@ -601,6 +732,10 @@ a {
 	margin: 20px;
 	padding-top: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .thecard {
 	position: absolute;
 	width: 90%;
@@ -758,7 +893,10 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
 		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
@@ -793,12 +931,17 @@ a {
 	padding-right: 10%;
 	transform: rotateY(180deg);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f314f7cd764d9684709beec282c479a6824fe68
 .logo_mat {
 	text-align: center;
 	font-size: 3em;
 	margin-bottom: 30px;
 	margin-top: 10px;
 }
+
 /**-----------------------**/
 /**  SECCION  CONTACTO    */
 /**-----------------------**/

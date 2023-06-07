@@ -1,15 +1,9 @@
-let navbar = document.querySelector('.header .navbar ');
-let menuBtn = document.querySelector('#menu-btn');
-let closeBtn = document.querySelector('#close-navbar');
+const nav = document.querySelector(".navbar");
 
-menuBtn.onclick = () => {
-    navbar.classList.add('active');
-};
-
-closeBtn.onclick = () => {
-    navbar.classList.remove('active');
-};
+window.addEventListener("scroll", function () {
+	navbar.classList.toggle("active", window.scrollY > 0);
+});
 
 window.onscroll = () => {
-    navbar.classList.remove('active');
+	navbar.classList.remove("active");
 };
