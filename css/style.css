@@ -14,7 +14,7 @@ body {
 	display: none;
 }
 
-.servicios{
+.servicios {
 	box-shadow: 5px 5px 20px rgba(172, 172, 172, 0.4);
 	transform: translateY(-3%);
 	text-shadow: 4px 4px 2px rgba(105, 105, 105, 0.6);
@@ -26,7 +26,7 @@ body {
 	vertical-align: text-bottom;
 }
 
-.productos{
+.productos {
 	box-shadow: 5px 5px 20px rgba(172, 172, 172, 0.4);
 	transform: translateY(-3%);
 	text-shadow: 4px 4px 2px rgba(105, 105, 105, 0.6);
@@ -37,8 +37,8 @@ body {
 	text-align: center;
 	vertical-align: text-bottom;
 }
-.materiales{	
-	box-shadow: -18px 0px 35px 0px rgba(0,0,0,0.48);
+.materiales {
+	box-shadow: -18px 0px 35px 0px rgba(0, 0, 0, 0.48);
 	transform: translateY(-100%);
 	text-shadow: 4px 4px 2px rgba(105, 105, 105, 0.6);
 	color: rgb(0, 0, 0);
@@ -63,6 +63,21 @@ body {
 /**-----------------------**/
 /**  SECTCION  NAVBAR     **/
 /**-----------------------**/
+.header .navbar #close-navbar {
+	position: absolute;
+	top: 1.5rem;
+	right: 2rem;
+	font-size: 4rem;
+	cursor: pointer;
+	color: var(--black);
+	display: none;
+}
+#menu-btn {
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: var(--black);
+	display: none;
+}
 
 .navbar-expand-lg {
 	background-color: white;
@@ -74,8 +89,6 @@ body {
 }
 .nav-item {
 	text-align: center;
-	
-	
 	min-width: 130px;
 	height: 40px;
 	margin-left: 10px;
@@ -133,99 +146,112 @@ ul {
 
 a {
 	color: black;
-	
 	font-size: 25px;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	text-decoration: none;
 }
 
-
-
 /**-----------------------**/
 /**  Media Querys         **/
 /**-----------------------**/
 
-@media (max-width: 1280px) {
-	.containerNosotros{
+ @media (max-width: 1280px) {
+	.containerNosotros {
 		padding-left: 20px;
 	}
-	
-	.boton_nosotros{
+
+	.boton_nosotros {
 		margin-top: 10%;
 	}
-	.containerMateriales{
+
+	.containerMateriales {
 		margin-bottom: 500px;
 	}
-	
-	.container{	
+
+	.container {
 		justify-content: center;
 		padding-right: 15%;
 		padding-left: 15%;
-
-
-		
 	}
-	.col_repar{
-		
+
+	.col_repar {
 		padding-right: 2%;
 		margin-left: 2%;
-		
 	}
-	.col_mant{
-		
+
+	.col_mant {
 		margin-right: 2%;
 	}
 
-	.lead{
+	.lead {
 		font-size: 15px;
-		
-	
 	}
 
 	.navbar-expand-lg {
 		height: 80px;
 	}
+
 	.nav__container {
 		width: 95%;
 	}
+
 	#logo_lonera {
 		margin-left: 5%;
 	}
+
 	.menu a {
 		padding: 5px;
 	}
-	.menu .border-top,
-	.menu .border-bottom {
-		height: 0.5px;
-	}
-	.menu .border-left,
-	.menu .border-right {
-		width: 0.5px;
-	}
-	.menu a:hover .border-top,
-	.menu a:hover .border-bottom {
-		transform: scaleX(1.5);
-	}
-	.menu a:hover .border-left,
-	.menu a:hover .border-right {
-		transform: scaleY(1.5);
-	}
-	.menu a:hover .border-right {
-		transition-delay: calc(var(--transition-delay) / 2);
-	}
-	.menu a:hover .border-bottom {
-		transition-delay: calc(var(--transition-delay) * 1.5);
-	}
-	.menu a:hover .border-left {
-		transition-delay: calc(var(--transition-delay) * 2);
-	}
-	
-	
-}
-/* LARGE SIZE */
-@media (min-width: 700px) {
-	.body{
+} 
 
+@media (min-width: 700px) {
+	.containerNosotros {
+		padding-left: 20px;
+	}
+
+	.boton_nosotros {
+		margin-top: 10%;
+	}
+
+	.containerMateriales {
+		margin-bottom: 500px;
+	}
+
+	.container {
+		justify-content: center;
+		padding-right: 15%;
+		padding-left: 15%;
+	}
+
+	.col_repar {
+		padding-right: 2%;
+		margin-left: 2%;
+	}
+
+	.col_mant {
+		margin-right: 2%;
+	}
+
+	.lead {
+		font-size: 15px;
+	}
+
+	.navbar-expand-lg {
+		height: 80px;
+	}
+
+	.nav__container {
+		width: 95%;
+	}
+
+	#logo_lonera {
+		margin-left: 5%;
+	}
+
+	.menu a {
+		padding: 5px;
+	}
+	.body {
 		size-adjust: 67%;
 	}
 	.contact-wrapper {
@@ -238,7 +264,7 @@ a {
 	.contact-info h4,
 	.contact-info ul,
 	.contact-info p {
-	text-align: left;
+		text-align: left;
 	}
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -249,56 +275,110 @@ a {
 		margin: 15px;
 	}
 }
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
 
+	.header .navbar a {
+		font-size: 1.7rem;
+	}
+
+	section {
+		padding: 3rem 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.header .navbar {
+		position: fixed;
+		top: 0;
+		right: -105%;
+		width: 30rem;
+		background: var(--white);
+		height: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+		flex-flow: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		z-index: 1200;
+	}
+	.header .navbar #close-navbar {
+		display: block;
+	}
+	.header .navbar.active {
+		right: 0;
+	}
+
+	.header .navbar a {
+		display: block;
+		margin: 1rem 0;
+		text-align: center;
+		font-size: 3rem;
+	}
+
+	.home .content h3 {
+		font-size: 5.5rem;
+	}
+}
+/* 
+@media (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+
+	.home .content h3 {
+		font-size: 4.5rem;
+	}
+} */
 /**-----------------------**/
 /**  SECTCION  NOSOTROS   **/
 /**-----------------------**/
 .containerNosotros {
-	
 	width: 100%;
 	height: 100vh;
-	
+
 	align-content: center;
-	
+
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url(../src/img/principal.jpg);
+		url(../src/img/principal.webp);
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: white;
 }
-.Nosotros{
-
-	margin-top:15%;
+.Nosotros {
+	margin-top: 15%;
 	font-size: 3rem;
 	vertical-align: text-bottom;
-
 }
-.boton_nosotros{
+.boton_nosotros {
 	margin-top: 10%;
 	font-size: 20px;
 	width: 160px;
 	height: 50px;
-	background-color:#003a0d;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+	background-color: #003a0d;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 	border-radius: 7%;
-	box-shadow:#017728 0px 0px 5px;
-	
-    
-
-	
+	box-shadow: #017728 0px 0px 5px;
 }
 .container {
-
-	
 	display: flex;
 	max-width: 1400px;
-
-	
 	align-content: center;
 }
 
@@ -316,7 +396,6 @@ a {
 /**  SECTCION  PRODUCTOS  **/
 /**-----------------------**/
 .containerProductos {
-	
 	width: 100%;
 	height: 100%;
 	align-content: center;
@@ -330,47 +409,48 @@ a {
 	margin: auto;
 	align-content: center;
 }
-.slider-frame{
+.slider-frame {
 	width: 100%;
 
 	overflow: hidden;
-	
-	
 }
-.slider-frame ul{
+.slider-frame ul {
 	width: 100%;
 
-	display:flex;
-	padding:0;
+	display: flex;
+	padding: 0;
 	animation: slide 20s infinite;
 }
-.slider-frame li{
-	
+.slider-frame li {
 	list-style: none;
-	width:100%
-}
-.slider-frame img{
 	width: 100%;
-
 }
-@keyframes slide{
-	0%{margin-left: 0%;}
-	20%{margin-left: 43%;}
+.slider-frame img {
+	width: 100%;
+}
+@keyframes slide {
+	0% {
+		margin-left: 0%;
+	}
+	20% {
+		margin-left: 43%;
+	}
 
-	40%{margin-left: 43%;}
-	60%{margin-left: 86%;}
-	80%{margin-left: 86%;}
-	100%{margin-left: 0%;}
-
-	
-
-
-	
-
+	40% {
+		margin-left: 43%;
+	}
+	60% {
+		margin-left: 86%;
+	}
+	80% {
+		margin-left: 86%;
+	}
+	100% {
+		margin-left: 0%;
+	}
 }
 
-
-#Arrows{
+#Arrows {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 50%;
@@ -379,32 +459,30 @@ a {
 	width: 100%;
 }
 
-#Arrows i{
+#Arrows i {
 	background-color: rgba(224, 209, 209, 0.25);
-	color: #1C1D21;
+	color: #1c1d21;
 	cursor: pointer;
 	height: 40px;
 	padding-top: 5px;
 	padding-left: 15px;
 
-	transition: background-color .5s, color .5s;
+	transition: background-color 0.5s, color 0.5s;
 }
 
-#Arrows i:first-of-type{ 
-
+#Arrows i:first-of-type {
 	padding-right: 15px;
 }
 
-#Arrows i:last-of-type{ 
+#Arrows i:last-of-type {
 	margin-left: 220px;
 	padding-left: 15px;
 	padding-right: 15px;
-	
 }
 
-#Arrows i:hover{
+#Arrows i:hover {
 	padding-top: 5px;
-	background-color: rgba(28,29,33, .75);
+	background-color: rgba(28, 29, 33, 0.75);
 	color: #ffffff;
 }
 
@@ -465,7 +543,6 @@ a {
 	color: #fff;
 }
 
-
 /**-----------------------**/
 /**  SECTCION  SERVICIOS  **/
 /**-----------------------**/
@@ -483,19 +560,16 @@ a {
 	color: white;
 }
 
-.encuadre_servicio{
-	padding-top: 10PX;
-		
-	height: 70%;}
-.col_mant{	
+.encuadre_servicio {
+	padding-top: 10px;
+	height: 70%;
+}
+.col_mant {
 	padding-left: 25px;
 	width: 47%;
 	float: right;
-
-
 }
-.col_repar{
-	
+.col_repar {
 	width: 47%;
 	float: left;
 }
@@ -504,29 +578,20 @@ a {
 /**-----------------------**/
 .containerMateriales {
 	height: 100%;
-	display:block;
+	display: block;
 	flex-wrap: wrap;
-	
 	height: 100vh;
-	
 	align-content: center;
 	justify-content: center;
 	padding-top: 10px;
-	
-
-
-
-	
 }
 .containerTarjetas {
-	
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
 .maincontainer {
-	
 	display: flex;
 	position: relative;
 	justify-content: space-around;
@@ -535,11 +600,8 @@ a {
 	height: 300px;
 	margin: 20px;
 	padding-top: 10px;
-
-	
 }
 .thecard {
-
 	position: absolute;
 	width: 90%;
 	height: 90%;
@@ -552,11 +614,9 @@ a {
 	transform: rotateY(180deg);
 }
 
-.theFrontLonLit{
-
+.theFrontLonLit {
 	background: url(../src/img/productos/fondo_tarjeta/utter.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -566,23 +626,19 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-
-	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
+	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
 }
 
-.theFrontLonAcr{
-
+.theFrontLonAcr {
 	background: url(../src/img/productos/fondo_tarjeta/lona_acrilica.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -592,23 +648,19 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-	
-	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
+	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
 }
 
-.theFrontRaf{
-
+.theFrontRaf {
 	background: url(../src/img/productos/fondo_tarjeta/rafia.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -618,23 +670,19 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-	
-	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
+	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
 }
 
-.theFrontMedSom{
-
+.theFrontMedSom {
 	background: url(../src/img/productos/fondo_tarjeta/media_sombra.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -644,24 +692,19 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-	
-	text-shadow: -1px 0 #ffffff, 0 1px #001b94, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #3c4230, 3px 3px #7e7e7e;
+	text-shadow: -1px 0 #ffffff, 0 1px #001b94, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #3c4230, 3px 3px #7e7e7e;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
-
 }
 
-.theFrontCubCer{
-
+.theFrontCubCer {
 	background: url(../src/img/productos/fondo_tarjeta/cuburecerco.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -671,23 +714,19 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-	
-	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
+	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
 }
 
-.theFrontCov{
-
+.theFrontCov {
 	background: url(../src/img/productos/fondo_tarjeta/cobersol.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -697,22 +736,19 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-	
-	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
+	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
 }
 
-.theFrontPvc{
+.theFrontPvc {
 	background: url(../src/img/productos/fondo_tarjeta/pvc_cristal.jpg);
 	background-size: cover;
-	
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -722,20 +758,18 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	color: white;
-	
-	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff, 
-	2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
+
+	text-shadow: -1px 0 #53565e, 0 1px #313338, 1px 0 #fffffd, 0 -1px #ffffff,
+		2px 2px #5f6166, 3px 3px #000000, 4px 4px #31312f, 5px 5px #868681;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
 	font-size: 25px;
 	padding-left: 15%;
 	padding-right: 15%;
-	
 }
 
-
-.theBack{
+.theBack {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -744,7 +778,11 @@ a {
 	height: 100%;
 	backface-visibility: hidden;
 	background: rgb(38, 161, 29);
-background: linear-gradient(0deg, rgba(69, 153, 0, 0.583) 0%, rgba(201, 198, 3, 0.662) 100%);
+	background: linear-gradient(
+		0deg,
+		rgba(69, 153, 0, 0.583) 0%,
+		rgba(201, 198, 3, 0.662) 100%
+	);
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	border-radius: 20px;
@@ -755,16 +793,14 @@ background: linear-gradient(0deg, rgba(69, 153, 0, 0.583) 0%, rgba(201, 198, 3, 
 	padding-right: 10%;
 	transform: rotateY(180deg);
 }
-.logo_mat{
-	
+.logo_mat {
 	text-align: center;
 	font-size: 3em;
 	margin-bottom: 30px;
 	margin-top: 10px;
-	
 }
 /**-----------------------**/
-/**  SECTCION  CONTACTO    */
+/**  SECCION  CONTACTO    */
 /**-----------------------**/
 .containerContacto {
 	display: block;
@@ -839,6 +875,7 @@ ul {
 	border: 0;
 	text-transform: uppercase;
 	padding: 1em;
+	color: white;
 }
 
 .contact-form form .boton_enviar:hover,
@@ -848,20 +885,22 @@ ul {
 	transition: background-color 1s ease-out;
 	outline: 0;
 }
+.bloque_enviar {
+	margin-top: 4%;
+	vertical-align: bottom;
+
+	grid-column: 1/3;
+}
 .boton_enviar {
-	margin-top: 20px;
-	padding-top: 5px;
-	color:white;
+	margin-top: 10px;
 	height: 80%;
 	border-radius: 15px;
 	text-align: center;
 	background-color: #003a0d;
-	grid-column: 1 / 3;
 }
-.close{
+.close {
 	text-align: center;
 }
-
 
 /* CONTACT INFO */
 .contact-info {
@@ -875,16 +914,25 @@ ul {
 	text-align: center;
 }
 
-
-
 /**-----------------------**/
 /**   SECTION   FOOTER    */
 /**-----------------------**/
+.wildev {
+	color: white;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.designedby {
+	color: white;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-size: 0.9em;
+}
 footer {
-	background: #017728;
-	color: rgb(10, 9, 9);
-	font-size: x-large;
+	background: #004916;
 	text-align: center;
+	font-size: x-large;
+
 	padding: 20px;
 }
 .modalDialog {
@@ -895,16 +943,16 @@ footer {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0, 0, 0, 0.8);
 	z-index: 99999;
-	opacity:0;
+	opacity: 0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
 .modalDialog:target {
-	opacity:1;
+	opacity: 1;
 	pointer-events: auto;
 }
 .modalDialog > div {
@@ -917,13 +965,13 @@ footer {
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
-  -webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
 }
 .close {
 	background: #606061;
-	color: #FFFFFF;
+	color: #ffffff;
 	line-height: 25px;
 	position: absolute;
 	right: -12px;
@@ -939,4 +987,6 @@ transition: opacity 400ms ease-in;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
 }
-.close:hover { background: #00d9ff; }
+.close:hover {
+	background: #00d9ff;
+}
