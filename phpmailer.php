@@ -27,6 +27,7 @@ HTML;
 
 $mailer = new PHPMailer();
 $mailer->setFrom($email, "$nombre");
+$mailer->addAddress('consultas@xn--loneraelporteo-2nb.com', 'Lonera El Porteño');
 $mailer->addAddress('consultas@loneraelporteño.com', 'Lonera El Porteño');
 $mailer->Subject = "Mensaje Web: $asunto";
 $mailer->msgHTML($body);
